@@ -26,3 +26,10 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
+Rake::Task["release"].clear
+desc "Release a gem to gemfury"
+task :release => [:clean, :build] do
+  version = File.read('VERSION')
+  pkg_name = "moxie-mineral-#{version}.gem"
+  puts `fury push pkg/#{pkg_name}`
+end
