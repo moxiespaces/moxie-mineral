@@ -5,11 +5,11 @@ require 'rake/testtask'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  gem.name = 'mineral'
+  gem.name = 'moxie-mineral'
   gem.summary = %Q{Rack metal with a better interface}
   gem.description = %Q{Rack metal with a better interface}
   gem.email = "jonbell@spamcop.net"
-  gem.homepage = "http://github.com/jonbell/mineral"
+  gem.homepage = "https://github.com/moxiespaces/moxie-mineral"
   gem.authors = ["jonbell"]
   gem.files.include 'lib/**/*.rb'
   gem.files.exclude '.bundle/*'
