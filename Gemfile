@@ -1,7 +1,7 @@
 source 'https://gems.gemfury.com/qsNMqt3pW3Ar1QaNqsdX/'
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '~> 3.2.13'
 
 group :development do
   gem "shoulda", ">= 0"
